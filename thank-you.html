@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message info</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background:linear-gradient(to right, #000, #464647);
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            text-align: center;
+            flex: 1;
+        }
+        
+        /* Thank You Content */
+        .thank-you {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            animation: zoom 0.5s linear;
+        }
+        
+    @keyframes zoom {
+            from {
+                transform: scale(0.3);
+                opacity: 0;
+            }
+            to {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .thank-you i {
+            font-size: 4rem;
+            color: greenyellow;
+        }
+        
+        .thank-you h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: #2c3e50;
+        }
+        
+        .thank-you p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            color: #7f8c8d;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background: #3498db;
+            color: white;
+            padding: 8px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .back-btn:hover {
+            background: #2980b9;
+            transform: translateY(-3px);
+        }
+        
+        /* Footer (Matches Your Portfolio) */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+        
+        @media (max-width: 600px) {
+            .thank-you {
+                padding: 30px 20px;
+            }
+            
+            .thank-you h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="thank-you">
+            <i class="fas fa-check-circle"></i>
+            <h1>Message Received!</h1>
+            <p>Thank you for reaching out. I'll get back to you within 24-48 hours.</p>
+            <p>In the meantime, feel free to explore more of my work.</p>
+            <a href="index.html" class="back-btn">
+                <i class="fas fa-arrow-left" style="margin-right: 8px; font-size: 2rem;transform: translateY(5px); color: red;"></i> Back to Portfolio
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; <span id="year"></span> Ezra Ihonre. All rights reserved.
+    </footer>
+
+    <script>
+        // Auto-update copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
