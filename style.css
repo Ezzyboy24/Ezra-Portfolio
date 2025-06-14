@@ -864,7 +864,7 @@ transform: translateY(-3px);
 
          .message-trigger {
             position: fixed;
-            bottom: 80px;
+            bottom: 150px;
             right: 20px;
             width: 50px;
             height: 50px;
@@ -921,7 +921,7 @@ transform: translateY(-3px);
         }
              #whatsapp a {
             position: fixed;
-            bottom: 150px;
+            bottom: 80px;
             right: 20px;
             width: 50px;
             height: 50px;
@@ -935,7 +935,6 @@ transform: translateY(-3px);
             opacity: 1;
             visibility: visible;
             transition: all 0.3s ease;
-            z-index: 999;
             text-decoration: none;
         }
 
@@ -1027,7 +1026,7 @@ transform: translateY(-3px);
 
         @media (max-width: 480px) {
             .message-form-container {
-                width: 90%;
+                width: 70%;
                 right: 5%;
             }
         }
