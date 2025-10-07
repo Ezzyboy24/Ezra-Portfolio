@@ -656,6 +656,15 @@ main{
   border-radius: 10px;
   box-shadow: 0px 0px 14px 0px #1a252f;
 }
+@media(max-width:415px){
+  .project{
+    width: 300px;
+    height: 300px;
+  }
+  .project img{
+    height: 130px;
+  }
+}
 .circle3 {
   width: 300px;
   height: 300px;
@@ -937,6 +946,7 @@ transform: translateY(-3px);
             visibility: visible;
             transition: all 0.3s ease;
             text-decoration: none;
+            z-index:999;
         }
 
 
@@ -1129,3 +1139,4 @@ transform: translateY(-3px);
   opacity: 1;
   transform: translateY(0);
 }
+
